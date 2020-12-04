@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
 }
+:root{
+  --bcg-color:#262626;
+  --btn-color-hover:#57AD56;
+}
 header{
   height: 72px;
   width: 100vw;
@@ -30,16 +34,26 @@ button{
   line-height: 24px;
   border-radius: 2px;
 }
+.sign-in-btn:hover{
+  cursor: pointer;
+  background-color: var(--btn-color-hover);
+  transition: 0.8s linear;
+}
 .reg-btn{
   width: 80px;
   height: 40px;
-  background: #262626;
+  background:var(--bcg-color);
   border-radius: 2px;
   font-weight: 500;
   font-size: 13px;
   line-height: 24px;
   color: white;
   border: none;
+}
+.reg-btn:hover{
+  cursor: pointer;
+  background-color: var(--btn-color-hover);
+  transition: 0.8s linear;
 }
 .my-purchases-btn{
   width: 40px;
@@ -49,6 +63,11 @@ button{
   background-position: 9px 9px;
   border: none;
   background-color: #fff;
+}
+.my-purchases-btn:hover{
+  cursor: pointer;
+  background-image: url(./images/purchases-icon-hover.svg);
+  transition: 0.8s linear;
 }
 @media (min-width:768px){
   .headline{
