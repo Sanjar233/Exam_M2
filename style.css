@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 :root{
   --bcg-color:#262626;
@@ -69,13 +70,46 @@ button{
   background-image: url(./images/purchases-icon-hover.svg);
   transition: 0.8s linear;
 }
+.hero{
+  height: 364px;
+  width: 100vw;
+  background-image: url(./images/hero-bcg.png);
+  background-repeat: no-repeat;
+}
+.hero__content{
+  width: 389px;
+  height: 204px;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top:80px;
+}
+.hero__content h2{
+
+}
+.price{
+
+}
+.order-time{
+
+}
 @media (min-width:768px){
+  .hero{
+    background-size: 100%;
+  }
   .headline{
     margin-left: 80px;
+  }
+  .hero__content{
+    margin-left: 81px;
   }
 }
 @media (min-width:577px) and (max-width:767px){
   .headline{
+    margin-left: 8px;
+  }
+   .hero__content{
     margin-left: 8px;
   }
 }
@@ -85,5 +119,8 @@ button{
   }
   .my-purchases-btn{
     display: none;
+  }
+  .hero__content{
+    margin-left: 8px;
   }
 }
