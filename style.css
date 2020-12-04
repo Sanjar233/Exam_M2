@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header{
+  height: 72px;
+  width: 100vw;
+  display: flex;
+}
+.headline{
+  background-image: url(./images/logo.svg);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+button{
+  margin: 16px;
+  margin-top: 10px;
+}
+.sign-in-btn{
+  height: 40px;
+  width: 80px;
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  border-radius: 2px;
+}
+.reg-btn{
+  width: 80px;
+  height: 40px;
+  background: #262626;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: white;
+  border: none;
+}
+.my-purchases-btn{
+  width: 40px;
+  height: 100%;
+  background-image: url(./images/purchases-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 9px 9px;
+  border: none;
+  background-color: #fff;
+}
+@media (min-width:768px){
+  .headline{
+    margin-left: 80px;
+  }
+}
+@media (min-width:577px) and (max-width:767px){
+  .headline{
+    margin-left: 8px;
+  }
+}
+@media (max-width:576px){
+  .headline{
+    margin-left: 8px;
+  }
+  .my-purchases-btn{
+    display: none;
+  }
+}
