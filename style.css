@@ -4,6 +4,12 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
 :root{
   --bcg-color:#262626;
   --btn-color-hover:#57AD56;
@@ -14,7 +20,6 @@
 }
 header{
   height: 72px;
-  width: 100vw;
   display: flex;
 }
 .headline{
@@ -62,7 +67,6 @@ button{
 }
 .my-purchases-btn{
   width: 40px;
-  height: 100%;
   background-image: url(./images/purchases-icon.svg);
   background-repeat: no-repeat;
   background-position: 9px 9px;
@@ -76,7 +80,6 @@ button{
 }
 .hero{
   height: 364px;
-  width: 100vw;
   background-image: url(./images/hero-bcg.png);
   background-repeat: no-repeat;
   padding-top: 80px;
@@ -144,7 +147,6 @@ button{
 }
 .food-menu{
   height: 780px;
-
 }
 .food-menu-title{
   width: 84px;
@@ -212,6 +214,79 @@ background-image:url(./images/lard.png);
   background-repeat: no-repeat;
   background-position: right;
 }
+footer{
+  background-color:var(--bcg-color);
+  height: 443px;
+  margin-top:80px;
+}
+.footer-title{
+  width: 200px;
+  height: 116px;
+  background-image: url(./images/footer-title.svg);
+  background-position: 0px 56px;
+  margin: 0 0px 40px 80px;
+  background-repeat: no-repeat;
+}
+hr{
+  height: 1px;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+.footer__main-links{
+  display:flex;
+  flex-direction: row;
+}
+footer select{
+  width: 227px;
+  height: 40px;
+  background-color: #3B3B3B;
+  border-radius: 2px;
+  color: white;
+  background-image: url(./images/lang-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 16px 12px;
+  padding-left: 48px;
+  margin-top: 32px;
+}
+footer option{
+  width: 227px;
+  height: 40px;
+  background-color: #3B3B3B;
+  border-radius: 2px;
+  color: white;
+}
+.tag{
+  display: flex;
+  margin: 45px 0 20px 0;
+}
+.tag-part-1{
+  color: #49A144;
+}
+.tag-part-2{
+  color: white;
+}
+footer ul li{
+  display: inline-block;
+}
+footer ul li a{
+
+}
+.links-contacts{
+  margin-bottom: 60px;
+}
+.facebook{
+  background-image: url(./images/facebook-icon.svg);
+  background-repeat: no-repeat;
+}
+.twitter{
+  background-image: url(./images/twitter-icon.svg);
+  background-repeat: no-repeat;
+}
+.instagram{
+  background-image: url(./images/instagram-icon.svg);
+  background-repeat: no-repeat;
+}
 @media (min-width:768px){
   .hero{
     background-size: 100%;
@@ -253,6 +328,9 @@ background-image:url(./images/lard.png);
   .dish img{
     float: right;
   }
+  footer{
+    padding: 0 80px 0 80px;
+  }
 }
 @media (min-width:577px) and (max-width:767px){
   .headline{
@@ -283,6 +361,9 @@ background-image:url(./images/lard.png);
   }
   .food-menu-title{
     margin: 56px 0 32px 8px;
+  }
+  footer{
+    margin-top: 500px;
   }
 }
 @media (max-width:576px){
@@ -318,5 +399,8 @@ background-image:url(./images/lard.png);
   }
   .food-menu-title{
     display: none;
+  }
+  footer{
+    margin-top: 200px;
   }
 }
