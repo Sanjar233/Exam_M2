@@ -7,6 +7,7 @@
 :root{
   --bcg-color:#262626;
   --btn-color-hover:#57AD56;
+  --text-color: #1D1D1D;
 }
 header{
   height: 72px;
@@ -75,6 +76,7 @@ button{
   width: 100vw;
   background-image: url(./images/hero-bcg.png);
   background-repeat: no-repeat;
+  padding-top: 80px;
 }
 .hero__content{
   width: 389px;
@@ -83,16 +85,39 @@ button{
   border-radius: 2px;
   background-color: #fff;
   margin: 0 auto;
-  margin-top:80px;
+  padding-top: 38px;
 }
 .hero__content h2{
-
+  margin: 0 auto;
+  width: 320px;
+  height: 42px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 42px;
+  color:var(--text-color);
 }
 .price{
-
+  width: 172px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  color:var(--bcg-color);
+  margin: 0 auto;
+  margin-left: 10%;
+  padding-top: 62px;
 }
 .order-time{
-
+  width: 97px;
+  height: 32px;
+  font-size: 13px;
+  line-height: 15px;
+  background-color: var(--bcg-color);
+  border-radius: 18px;
+  color: #fff;
+  text-align: center;
+  padding-top: 8px;
+  margin: 0 auto;
+  
 }
 @media (min-width:768px){
   .hero{
@@ -104,6 +129,13 @@ button{
   .hero__content{
     margin-left: 81px;
   }
+  .price{
+    display: inline-block;
+  }
+  .order-time{
+    display: inline-block;
+    margin-top: 62px;
+  }
 }
 @media (min-width:577px) and (max-width:767px){
   .headline{
@@ -112,6 +144,13 @@ button{
    .hero__content{
     margin-left: 8px;
   }
+  .price{
+    display: inline-block;
+  }
+  .order-time{
+    display: inline-block;
+    margin-top: 62px;
+  }
 }
 @media (max-width:576px){
   .headline{
@@ -119,6 +158,14 @@ button{
   }
   .my-purchases-btn{
     display: none;
+  }
+  .price{
+    display: block;
+    margin: 0 0 30px 19%;
+  }
+  .order-time{
+    display: block;
+    margin-left: 19%;
   }
   .hero__content{
     margin-left: 8px;
