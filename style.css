@@ -8,6 +8,8 @@
   --bcg-color:#262626;
   --btn-color-hover:#57AD56;
   --text-color: #1D1D1D;
+  --link-color:#626262;
+  --link-color-hover:  #327430;
 }
 header{
   height: 72px;
@@ -117,7 +119,27 @@ button{
   text-align: center;
   padding-top: 8px;
   margin: 0 auto;
-  
+}
+.nav{
+  width: 100%;
+  height: 80px;
+  background: #FFFFFF;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+
+}
+.menu-links{
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+}
+.menu-links li {
+  display: inline-block;
+  margin-left: 4%;
+}
+.menu-links li a:hover{
+  color:var(--link-color-hover);
 }
 @media (min-width:768px){
   .hero{
@@ -136,6 +158,14 @@ button{
     display: inline-block;
     margin-top: 62px;
   }
+  .menu-links li a{
+    text-decoration: none;
+    width: 61px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--link-color);
+  }
 }
 @media (min-width:577px) and (max-width:767px){
   .headline{
@@ -150,6 +180,14 @@ button{
   .order-time{
     display: inline-block;
     margin-top: 62px;
+  }
+  .menu-links li a{
+    text-decoration: none;
+    width: 61px;
+    height: 19px;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--link-color);
   }
 }
 @media (max-width:576px){
@@ -169,5 +207,18 @@ button{
   }
   .hero__content{
     margin-left: 8px;
+  }
+  .menu-links li a{
+    display: none;
+  }
+  .main-link:first-of-type{
+    display: block;
+    width: 84px;
+    height: 34px;
+    font-size: 22px;
+    line-height: 34px;
+    color: var(--text-color);
+    text-align: center;
+    margin-left: 230%;
   }
 }
