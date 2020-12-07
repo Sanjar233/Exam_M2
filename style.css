@@ -216,7 +216,6 @@ background-image:url(./images/lard.png);
 }
 footer{
   background-color:var(--bcg-color);
-  height: 443px;
   margin-top:80px;
 }
 .footer-title{
@@ -269,9 +268,6 @@ footer option{
 footer ul li{
   display: inline-block;
 }
-footer ul li a{
-
-}
 .links-contacts{
   margin-bottom: 60px;
 }
@@ -287,6 +283,51 @@ footer ul li a{
   background-image: url(./images/instagram-icon.svg);
   background-repeat: no-repeat;
 }
+.about-and-partnership{
+  margin:0 auto;
+}
+.about-and-partnership ul{
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+}
+.about-and-partnership li{
+  margin-top: 23px;
+}
+.help-and-FAQs{
+  margin: 0 auto;
+}
+.help-and-FAQs ul{
+  display: flex;
+  flex-direction: column;
+  margin-top:  9px;
+}
+.help-and-FAQs li{
+  padding-top: 23px;
+}
+.footer__main-links nav ul li a {
+  font-size: 13px;
+  line-height: 15px;
+  color:white;
+}
+.copyright{
+  margin-top: 40px ;
+  padding-bottom: 40px;
+}
+.copyright p:first-of-type{
+    margin: 0;
+  }
+  .copyright p{
+    margin: 0 auto;
+    font-size: 11px;
+    line-height: 13px;
+    color: white;
+  }
+  .copyright p a{
+    font-size: 11px;
+    line-height: 13px;
+    color: white;
+  }
 @media (min-width:768px){
   .hero{
     background-size: 100%;
@@ -331,6 +372,10 @@ footer ul li a{
   footer{
     padding: 0 80px 0 80px;
   }
+  .copyright{
+    display: flex;
+    flex-direction: row;
+  }
 }
 @media (min-width:577px) and (max-width:767px){
   .headline{
@@ -364,6 +409,11 @@ footer ul li a{
   }
   footer{
     margin-top: 500px;
+    padding: 0 8px 0 8px;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (max-width:576px){
@@ -402,5 +452,24 @@ footer ul li a{
   }
   footer{
     margin-top: 200px;
+    padding: 0 8px 0 8px;
+  }
+  .footer__main-links{
+    display: flex;
+    flex-direction: column;
+  }
+  .help-and-FAQs{
+    margin: 0 0 48px 0;
+  }
+  .about-and-partnership{
+    margin: 0 ;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: column;
+  }
+  .copyright p{
+    margin: 0;
+    margin-top: 24px;
   }
 }
